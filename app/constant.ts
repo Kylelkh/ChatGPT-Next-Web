@@ -1,4 +1,5 @@
 export const OWNER = "Kylelkh";
+export const APP_NAME = "ChatGPT助手"
 export const REPO = "ChatGPT-Next-Web";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;

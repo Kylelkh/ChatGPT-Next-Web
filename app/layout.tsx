@@ -3,14 +3,15 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getBuildConfig } from "./config/build";
+import {APP_NAME} from "./constant";
 
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "ChatGPT助手",
+  title: {APP_NAME},
   description: "Your personal ChatGPT Chat Bot.",
   appleWebApp: {
-    title: "ChatGPT助手",
+    title: {APP_NAME},
     statusBarStyle: "default",
   },
   themeColor: "#fafafa",

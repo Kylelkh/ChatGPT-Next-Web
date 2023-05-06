@@ -16,9 +16,9 @@ import Locale from "../locales";
 import { useAppConfig, useChatStore } from "../store";
 
 import {
+  APP_NAME,
   MAX_SIDEBAR_WIDTH,
-  MIN_SIDEBAR_WIDTH,
-  NARROW_SIDEBAR_WIDTH,
+  MIN_SIDEBAR_WIDTH, NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
 } from "../constant";
@@ -96,7 +96,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>{APP_NAME}</div>
         <div className={styles["sidebar-sub-title"]}>
           Build your own AI assistant. 最好的AI助手!
           永久维护请加微信：fullkyle
@@ -151,11 +151,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
-          </div>
+          {/*<div className={styles["sidebar-action"]}>*/}
+          {/*  <a href={REPO_URL} target="_blank">*/}
+          {/*    <IconButton icon={<GithubIcon />} shadow />*/}
+          {/*  </a>*/}
+          {/*</div>*/}
         </div>
         <div>
           <IconButton
