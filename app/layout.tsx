@@ -42,6 +42,7 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+
       </head>
       <body>{children}</body>
     </html>
